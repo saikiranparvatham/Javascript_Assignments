@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+          function fun(){
+         var x=document.getElementById("a").value;
+         var y=document.getElementById("b").value;
+         var z=document.getElementById("c").value;
+         if(x>y&&x>z)
+         document.getElementById("e").innerHTML=x;
+         if(y>x&&y>z)
+         document.getElementById("e").innerHTML=y;
+         if(z>x&&z>y)
+         document.getElementById("e").innerHTML=z;
+     }
+        </script>
+        <input id="a" type="number"></input>
+        <input id="b" type="number"></input>
+        <input id="c" type="number"></input>
+        <input id="d" type="button" onclick="fun()"></input> 
+        <p id="e"></p>
+    </body>
+</html>

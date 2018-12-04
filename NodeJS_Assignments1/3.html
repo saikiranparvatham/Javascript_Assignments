@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            function fun(){
+                var x=document.getElementById("num").value;
+                var factorial=1;
+                for(i=1; i<=x; ++i)
+        {
+            factorial *= i;              
+        }
+        document.getElementById("op").innerHTML=factorial;
+           
+            }
+        </script>
+    </body>
+    <input id="num" type="number"></input>
+    <input type="button" onclick="fun()"></input>
+    <p id="op"></p>
+</html>

@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <script>
+            function fun(){
+                var x=document.getElementById("in").value;
+                var c=(x-32)*5/9;
+                document.getElementById("op").innerHTML=c;
+            }
+        </script>
+        <h1>Enter the temperature in fahrenheit</h1>
+        <input id="in" type="number"></input>
+        <input type="button" value="convert to celsius" onclick="fun()"></input>
+        <p id="op"></p>
+    </body>
+</html>

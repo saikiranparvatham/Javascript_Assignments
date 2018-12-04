@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+function myFunction() {
+    
+    var txt=[0,0,0];
+    
+    for(i=0;i<=2;i++)
+    {
+    var person = prompt("Please enter a number");
+    if (person>30||person<0) {
+        txt[i]="not valid input"; 
+    } else {
+        txt[i] = person;
+    }
+    }
+    var y="*"
+    document.getElementById("demo").innerHTML =y.repeat(txt[0]) ;
+    document.getElementById("demo2").innerHTML =y.repeat(txt[1]);
+    document.getElementById("demo3").innerHTML = y.repeat(txt[2]);
+}
+</script>
+
+</body>
+</html>
