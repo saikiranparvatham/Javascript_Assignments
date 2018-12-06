@@ -1,11 +1,14 @@
 <html>
 <body>
-<script>function myFunction() {
+<script>
+function myFunction() 
+  {
     var y = document.getElementById("txt1").value;
     var z = document.getElementById("txt2").value;
     var x = Number(y) + Number(z);
     document.getElementById("demo").innerHTML = x;
-  }</script>
+  }
+  </script>
   <p>
     Click the button to calculate x.
     <button onclick="myFunction()">Try it</button>
@@ -16,4 +19,6 @@
     Enter second number:
     <input type="text" id="txt2" name="text2" >
   </p>
-  <p id="demo"></p></body></html>
+  <p id="demo"></p>
+  </body>
+  </html>

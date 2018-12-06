@@ -5,20 +5,22 @@
             {
                 var x=document.getElementById("in").value;
                 var i,flag=1;
-                for (i = 2; i <= x / 2; i++) { 
-  
-  
-                 if (x % i == 0) { 
-                   flag = 0; 
-                    break; 
-                   } 
+                for (i = 2; i <= x / 2; i++)
+                { 
+                    if (x % i == 0) 
+                    { 
+                        flag = 0; 
+                        break; 
+                    } 
                 }
-                     if (flag == 1) { 
+                     if (flag == 1) 
+                    { 
                       document.getElementById("op").innerHTML="prime";
-                        } 
-                      else { 
+                    } 
+                      else
+                    { 
                           document.getElementById("op").innerHTML="not prime"; 
-                              } 
+                    } 
                               
 
                
