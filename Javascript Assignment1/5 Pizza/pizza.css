@@ -1,0 +1,11 @@
+input
+{
+    font-size: 80%;
+    background-color: lightgray;
+    font-family: Arial;
+    margin: 20px;
+}
+h{
+    font-size: 15px;
+    font-weight: bold;
+}

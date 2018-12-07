@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link href="pizza.css" rel="stylesheet" type="text/css">
+        <script src="pizaa.js"></script>
+    </head>
+    <body>
+        
+        <header>
+            Name: <input id="name" type="text" ></input>
+            Email: <input id="email" type="text"></input>
+        </header>
+        <section>
+            <p>
+                <h>Toppings:</h>
+            </p>
+            Extra Cheese:<input type="checkbox" name="Toppings[]" value="Extra Cheese"></input>
+            Pepperoni:<input type="checkbox" name="Toppings[]" value="Pepperoni"></input>
+            Olives:<input type="checkbox" name="Toppings[]" value="Olives"></input> 
+            Pepper:<input type="checkbox" name="Toppings[]" value="Pepper"></input>
+            Bacon:<input type="checkbox" name="Toppings[]" value="Bacon"></input>
+            Tomatoes:<input type="checkbox" name="Toppings[]" value="Tomatoes"></input>
+            Mushrooms:<input type="checkbox" name="Toppings[]" value="Mushrooms"></input>
+            <p><h>How do you want to get pizza?</h>
+            Delivery<input type="radio" name="PurchaseMode" value="Delivery"></input>
+            Pickup<input type="radio" name="PurchaseMode" value="Pickup"></input></p>
+            <p>
+               <h>Tip?</h> 
+                <select>
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                    <option value="25">25%</option>                   
+                  </select>
+            </p>
+        </section>
+        <article>
+            <p>Address</p>
+           <textarea rows="4" cols="50"></textarea>
+           <p><input  id="submit" type="button" name="ActionButton" value="Submit" onclick="checkField()"></input>
+            <input type="button" name="ActionButton" value="Reset"></input>
+            <input type="button" name="ActionButton" value="Show Summary"></input></p>
+        </article>
+    </body>
+</html>
