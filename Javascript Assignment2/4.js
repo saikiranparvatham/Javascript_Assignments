@@ -21,7 +21,7 @@ var account = function (name, balance){
     };
   
     account.transfer = function (transferAmount){
-  //got stuck here
+  
     }
   
     console.log("Name: " + name + "; Balance: " + balance);
