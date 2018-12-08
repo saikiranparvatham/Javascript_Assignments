@@ -1,7 +1,7 @@
 <html>
     <head>
         <link href="pizza.css" rel="stylesheet" type="text/css">
-        <script src="pizaa.js"></script>
+        <script src="pizza.js"></script>
     </head>
     <body>
         
@@ -13,19 +13,19 @@
             <p>
                 <h>Toppings:</h>
             </p>
-            Extra Cheese:<input type="checkbox" name="Toppings[]" value="Extra Cheese"></input>
-            Pepperoni:<input type="checkbox" name="Toppings[]" value="Pepperoni"></input>
-            Olives:<input type="checkbox" name="Toppings[]" value="Olives"></input> 
-            Pepper:<input type="checkbox" name="Toppings[]" value="Pepper"></input>
-            Bacon:<input type="checkbox" name="Toppings[]" value="Bacon"></input>
-            Tomatoes:<input type="checkbox" name="Toppings[]" value="Tomatoes"></input>
-            Mushrooms:<input type="checkbox" name="Toppings[]" value="Mushrooms"></input>
+            Extra Cheese:<input id="cheese" type="checkbox" name="Toppings" value="Extra Cheese"></input>
+            Pepperoni:<input id="pepperoni" type="checkbox" name="Toppings" value="Pepperoni"></input>
+            Olives:<input id="olives" type="checkbox" name="Toppings" value="Olives"></input> 
+            Pepper:<input id="pepper" type="checkbox" name="Toppings" value="Pepper"></input>
+            Bacon:<input id="bacon" type="checkbox" name="Toppings" value="Bacon"></input>
+            Tomatoes:<input id="tomatoes" type="checkbox" name="Toppings" value="Tomatoes"></input>
+            Mushrooms:<input id="mushrooms" type="checkbox" name="Toppings" value="Mushrooms"></input>
             <p><h>How do you want to get pizza?</h>
-            Delivery<input type="radio" name="PurchaseMode" value="Delivery"></input>
-            Pickup<input type="radio" name="PurchaseMode" value="Pickup"></input></p>
+            Delivery<input id="delivery" type="radio" name="PurchaseMode" value="Delivery"></input>
+            Pickup<input id="pickup" type="radio" name="PurchaseMode" value="Pickup"></input></p>
             <p>
                <h>Tip?</h> 
-                <select>
+                <select id="tip">
                     <option value="15">15%</option>
                     <option value="20">20%</option>
                     <option value="25">25%</option>                   
@@ -34,10 +34,49 @@
         </section>
         <article>
             <p>Address</p>
-           <textarea rows="4" cols="50"></textarea>
-           <p><input  id="submit" type="button" name="ActionButton" value="Submit" onclick="checkField()"></input>
+           <textarea id="address" rows="4" cols="50"></textarea>
+           <p><input  id="submit" type="button" name="ActionButton" value="Submit" onclick="countCheckboxes()"></input>
             <input type="button" name="ActionButton" value="Reset"></input>
-            <input type="button" name="ActionButton" value="Show Summary"></input></p>
+            <input id="summary" type="button" name="ActionButton" value="Show Summary" onclick="showSummary()" disabled></input></p>
         </article>
+        <footer>
+            <table id="table">
+                <tr>
+                    <th>Name:</th>
+                    <td id="tname"></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td id="temail"></td>
+                </tr>
+                <tr>
+                    <th>Address:</th>
+                    <td id="taddress"></td>
+                </tr>
+                <tr>
+                    <th>Toppings</th>
+                </tr>
+                <tr>
+                   <th> Topping1</th>
+                   <td id="tTopping1"></td>
+                </tr>
+                <tr>
+                    <th>topping2</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Delivery?</th>
+                    <td id="tmethod"></td>
+                </tr>
+                <tr>
+                    <th>Tip amount</th>
+                    <td id="tipamt"></td>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <td id="total"></td>
+                </tr>
+            </table>
+        </footer>
     </body>
 </html>

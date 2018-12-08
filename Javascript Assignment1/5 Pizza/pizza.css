@@ -1,11 +1,41 @@
-input
+
+body
+{
+ background-color:lightgray ;   
+}
+    input
 {
     font-size: 80%;
-    background-color: lightgray;
+    background-color: cornsilk;
     font-family: Arial;
-    margin: 20px;
+    margin: 15px;
 }
 h{
     font-size: 15px;
     font-weight: bold;
+}
+table
+{
+    display: none;
+    width: 200px;
+    border-width: 20px;
+}
+
+tr{
+    width: 200%;
+}
+
+td:nth-child(even) 
+{
+    background-color:#eee;
+}
+
+td:nth-child(odd)
+{
+    background-color:darkgray;
+}
+th
+{
+    background-color: black;
+    color: white;
 }
